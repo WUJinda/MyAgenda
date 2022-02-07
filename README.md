@@ -28,7 +28,27 @@ Optional user stories
 
 ## Screenshots
 
-![Products](screenshots/products.png)
+![HomePage](screenshots/HomePage.jpg)
+![RegisterC](screenshots/RegisterC.jpg)
+![token](screenshots/token.png)
+![verification](screenshots/verification.jpg)
+![Login](screenshots/Login.jpg)
+![Login Success](screenshots/Login Success.jpg)
+![EmployeeSpace](screenshots/EmployeeSpace.jpg)
+![userReport](screenshots/userReport.jpg)
+![addTime](screenshots/addTime.jpg)
+![Times](screenshots/Times.jpg)
+![week](screenshots/week.jpg)
+![addproject](screenshots/addproject.jpg)
+![projectslist](screenshots/projectslist.jpg)
+![adduser](screenshots/adduser.jpg)
+![usersList](screenshots/usersList.jpg)
+![managerReport](screenshots/managerReport.jpg)
+![adminDash](screenshots/adminDash.jpg)
+![newUser](screenshots/newUser.jpg)
+![findUser](screenshots/findUser.jpg)
+![deleteUser](screenshots/deleteUser.jpg)
+![afterDel](screenshots/afterDel.jpg)
 
 ## Technical stack 
 
@@ -57,7 +77,14 @@ Run `ng serve --open` in Terminal for front-end. Navigate to `http://localhost:4
 
 Interface documentation for the Swagger plugin   
 
-![Products](screenshots/products.png)
+![Products](screenshots/home-resources.png)
+![admin-controll](screenshots/admin-controll.png)
+![Products](screenshots/employee-controller.png)
+![Products](screenshots/manager-controller.png)
+![Products](screenshots/user-controller.png)
+![Products](screenshots/registration-controller.png)
+
+
 
 
 
