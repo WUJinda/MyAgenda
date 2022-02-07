@@ -1,0 +1,81 @@
+<div class="container">
+    <div class="form-body mt-4">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="text-center">
+                    <legend class="mt-4">
+                        <h1><b>Add User</b></h1>
+                    </legend><br>
+                    <h3>Please enter user's information</h3>
+                </div>
+                <form class="form-horizontal ml-auto" #userForm="ngForm" (ngSubmit)="onRegister(userForm)">
+                    <fieldset>
+                      <div class="control-group">
+                        <!-- Username -->
+                        <label class="control-label"  for="username">Username</label>
+                        <div class="controls">
+                          <input type="text" id="username" ngModel name="username" placeholder="" class="input-xlarge">
+                          <p class="help-block">Username can contain any letters or numbers, without spaces</p>
+                        </div>
+                      </div>
+                      <div class="control-group">
+                          <!-- Firstname -->
+                          <label class="control-label"  for="firstname">Firstname</label>
+                          <div class="controls">
+                            <input type="text" id="firstname" ngModel name="firstname" placeholder="First Name" class="input-xlarge">
+                            <p class="help-block">First Name can contain any letters or numbers, without spaces</p>
+                          </div>
+                      </div>
+                  
+                      <div class="control-group">
+                          <!-- Lastname -->
+                          <label class="control-label"  for="lastname">Lastname</label>
+                          <div class="controls">
+                            <input type="text" id="lastname" ngModel name="lastname" placeholder="Last Name" class="input-xlarge">
+                            <p class="help-block">Last Name can contain any letters or numbers, without spaces</p>
+                          </div>
+                      </div>
+                  
+                      <div class="control-group">
+                        <!-- E-mail -->
+                        <label class="control-label" for="email">E-mail</label>
+                        <div class="controls">
+                          <input type="email" id="email" ngModel name="email" placeholder="" class="input-xlarge">
+                          <p class="help-block">Please provide your E-mail</p>
+                        </div>
+                      </div>
+                  
+                      <div class="control-group">
+                        <!-- Password-->
+                        <label class="control-label" for="password">Password</label>
+                        <div class="controls">
+                          <input type="password" id="password" ngModel name="password" placeholder="" class="input-xlarge">
+                          <p class="help-block">Password should be at least 4 characters</p>
+                        </div>
+                      </div>
+                  <!-- Role Id-->
+                      <!-- <div class="control-group">
+                        
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" ngModel name="roleId" id="exampleRadios1" value="1" checked readonly>
+                          <label class="form-check-label" for="exampleRadios1">
+                            Employee
+                          </label>
+                        </div>
+                      </div> -->
+                      
+                  
+                      <div class="control-group">
+                        <!-- Button -->
+                        <div class="controls">
+                          <button [disabled]="userForm.invalid" type="submit" class="btn btn-primary">Register</button>
+                        </div>
+                      </div>
+                    </fieldset>
+                  </form>
+            </div>
+        </div>
+    </div>
+
+</div>
+

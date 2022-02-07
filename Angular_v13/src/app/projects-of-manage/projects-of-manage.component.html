@@ -1,0 +1,17 @@
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">title</th>
+        <th scope="col">description</th>
+    </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let project of projects;let i = index" >
+        <th scope="row">{{ i+ 1 }}</th>
+        <td>{{project.title}}</td>
+        <td>{{project.description}}</td>
+      </tr>
+    </tbody>
+  </table>

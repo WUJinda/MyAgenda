@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="form-body mt-4">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="text-center">
+                        <legend class="mt-4">
+                            <h1><b>Project</b></h1>
+                        </legend><br>
+                        <h3>Please enter title & Description</h3>
+                    </div>
+                    
+                    <form class="well form-horizontal" #projectForm="ngForm" (ngSubmit)="onAddProject(projectForm)">
+                            <div class="form-group">
+                              <label for="title" class="control-label">Title</label>
+                              <input ngModel name="title" type="text" class="form-control" id="title"  placeholder="Enter Title">
+                              <small id="title" class="form-text text-muted"></small>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlTextarea1">Description</label>
+                                <textarea ngModel name="description" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                              </div><br/>
+                            <button [disabled]="projectForm.invalid" type="submit" class="btn btn-primary">Submit</button><br/>
+                    </form>
+
+                    <br/>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
